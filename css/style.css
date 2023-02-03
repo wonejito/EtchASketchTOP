@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: cornflowerblue;
+  display: flex;
+  /*align-items: center;*/
+  flex-direction: column;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+#principal-grid {
+  display: flex;
+  height: 256px;
+  width: 256px;
+  border: 2px solid red;
+  align-self: center;
+}
+
+.gridi {
+  height: 16px;
+  width: 16px;
+  border: 1px solid blue;
+}
