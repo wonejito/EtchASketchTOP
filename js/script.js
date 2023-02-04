@@ -1,16 +1,27 @@
-let principalgrid = document.querySelector("#principal-grid");
-principalgrid.style.cssText = "display: flex;";
-// let divi = document.createElement("div");
-// divi.style.cssText =
-//   "height: 100px; width:100px;background-color:pink;font-size:55px;";
+let title = document.querySelector("#title");
+let principalgrid = document.querySelector("#principalgrid");
 
-function createDivs(numberOfDivs) {
-  emptyArray = [];
-  for (i = 0; i < numberOfDivs; i++) {
-    emptyArray.push(`div-${[i]}`); //en este loop genero un array de los nombres de variables para los divs.
-    emptyArray[i] = document.createElement("div");
-    emptyArray[i].classList.add("divi");
+// let divs = document.createElement("div");
+// divs.style.cssText = "background-color:blue;height:100px;width:100px;";
+
+// principalgrid.appendChild(divs);
+
+// title.addEventListener("click", function () {
+//   let divs = document.createElement("div");
+//   divs.style.cssText = "background-color:blue;height:100px;width:100px;";
+
+//   principalgrid.appendChild(divs);
+// });
+
+//intento de crear una funcion que lo genere automaticamente
+function createElements(number) {
+  for (i = 0; i < number; i++) {
+    let divs = document.createElement("div");
+    divs.style.cssText =
+      "background-color:blue;height:100px;width:100px; border: solid green";
+    divs.className = "claseDiv";
+
+    principalgrid.appendChild(divs);
   }
-  return emptyArray[2].textContent;
 }
-console.log(createDivs(3));
+createElements(9);

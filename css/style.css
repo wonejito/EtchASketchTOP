@@ -7,6 +7,7 @@ body {
   display: flex;
   /*align-items: center;*/
   flex-direction: column;
+  height: 100vh;
 }
 
 #title {
@@ -15,16 +16,13 @@ body {
   font-weight: 700;
 }
 
-#principal-grid {
+#principalgrid {
   display: flex;
-  height: 512px;
-  width: 512px;
-  border: 2px solid red;
+  max-width: 512px;
+  max-height: 512px;
+  border: solid red;
   align-self: center;
-}
-
-.gridi {
-  height: 16px;
-  width: 16px;
-  border: 1px solid blue;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
