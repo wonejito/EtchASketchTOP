@@ -17,8 +17,8 @@ body {
 
 #principal-grid {
   display: flex;
-  height: 256px;
-  width: 256px;
+  height: 512px;
+  width: 512px;
   border: 2px solid red;
   align-self: center;
 }
