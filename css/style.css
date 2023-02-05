@@ -17,20 +17,19 @@ body {
 .maqui {
 	display: flex;
 	justify-content: center;
-	border:  solid blue;
 }
 #contenedor{
 	width: 512px;
 	height: 512px;
 	border:  solid brown;
-	display: grid;
+	/* display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	grid-template-columns: repeat(8, 1fr);
-	text-align: center;
+	text-align: center; */
 
 }
-.square:hover {
+/* .square:hover {
 	height: auto;
 	width: auto;
 	border: solid green;
-}
+} */

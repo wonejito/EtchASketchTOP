@@ -1,4 +1,66 @@
-let principalgrid = document.querySelector(".principal-grid");
+let contenedor = document.querySelector("#contenedor");
+let titulo =document.querySelector("#title")
+// let cubo = document.createElement("div")
+// cubo.className = "cubito"
+
+numeroDeCuadros = 4;
+
+titulo.addEventListener("click", function(){
+  let cubo = document.createElement("div")
+  cubo.textContent = "Hola"
+  contenedor.appendChild(cubo)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let divs = document.createElement("div");
 // divs.style.cssText = "background-color:blue;height:100px;width:100px;";
