@@ -1,17 +1,22 @@
+let numeroDeCuadros = 16;
 let contenedor = document.querySelector("#contenedor");
+contenedor.style.cssText = `grid-template-columns: repeat(${numeroDeCuadros}, 1fr); grid-template-rows: repeat(${numeroDeCuadros}, 1fr);`;
 let titulo = document.querySelector("#title");
 // let cubo = document.createElement("div")
 // cubo.className = "cubito"
 
-let numeroDeCuadros = 16;
-
-titulo.addEventListener("click", function () {
-	let cubo = document.createElement("div");
-	cubo.style.backgroundColor = "black";
-	cubo.style.width = 256 / numeroDeCuadros;
-	cubo.style.height = 256 / numeroDeCuadros;
-	contenedor.appendChild(cubo);
-});
+function crear() {
+	for (i = 0; i < numeroDeCuadros * numeroDeCuadros; i++) {
+		let cubo = document.createElement("div");
+		cubo.className = "square";
+		cubo.style.backgroundColor = "grey";
+		cubo.style.width = 256 / numeroDeCuadros;
+		cubo.style.height = 256 / numeroDeCuadros;
+		cubo.style.border = "1px solid yellow";
+		contenedor.appendChild(cubo);
+	}
+}
+crear();
 
 // let divs = document.createElement("div");
 // divs.style.cssText = "background-color:blue;height:100px;width:100px;";
