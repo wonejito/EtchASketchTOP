@@ -1,66 +1,17 @@
 let contenedor = document.querySelector("#contenedor");
-let titulo =document.querySelector("#title")
+let titulo = document.querySelector("#title");
 // let cubo = document.createElement("div")
 // cubo.className = "cubito"
 
-numeroDeCuadros = 4;
+let numeroDeCuadros = 16;
 
-titulo.addEventListener("click", function(){
-  let cubo = document.createElement("div")
-  cubo.textContent = "Hola"
-  contenedor.appendChild(cubo)
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+titulo.addEventListener("click", function () {
+	let cubo = document.createElement("div");
+	cubo.style.backgroundColor = "black";
+	cubo.style.width = 256 / numeroDeCuadros;
+	cubo.style.height = 256 / numeroDeCuadros;
+	contenedor.appendChild(cubo);
+});
 
 // let divs = document.createElement("div");
 // divs.style.cssText = "background-color:blue;height:100px;width:100px;";
